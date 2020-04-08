@@ -1,0 +1,37 @@
+@mixin box {
+    padding: 1rem;
+    background: #fff;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.625rem 0.875rem rgba(0, 0, 0, 0.22);
+    border: none;
+    outline: none;
+}
+
+.addTask {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 0.4rem;
+    box-sizing: border-box;
+    border-radius: 0.3125rem;
+
+    form {
+        display: flex;
+        & > div {
+            margin: 0.625rem;
+            input, select {
+                width: 18.75rem;
+                @include box();
+            }
+
+            button {
+                @include box();
+                cursor: pointer;
+                transition: opacity 0.2s;
+                &:hover {
+                    opacity: 0.9;
+                }
+            }            
+        }
+    }
+}

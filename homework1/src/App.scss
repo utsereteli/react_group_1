@@ -1,0 +1,37 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-arial/css/bpg-arial.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-arial-caps/css/bpg-arial-caps.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 0.8vw;
+}
+
+body {
+  font-family: "BPG Arial Caps", sans-serif;
+}
+
+input, select, button {
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 1.1rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    #8a2387,
+    #e94057,
+    #f27121
+  );
+}

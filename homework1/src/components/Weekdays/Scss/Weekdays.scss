@@ -1,0 +1,72 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-arial/css/bpg-arial.min.css");
+
+.weekdays {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+
+  .day {
+    background: #fff;
+    border-radius: 0.3125rem;
+    margin: 1.25rem 0.75rem;
+    width: calc(100% / 5);
+    min-height: 37.5rem;
+    box-shadow: 0 0.625rem 0.875rem rgba(0, 0, 0, 0.22);
+
+    h1 {
+      text-align: center;
+      border-bottom: 0.0625rem solid #e1e1e1;
+      line-height: 4.5rem;
+      font-size: 1.5rem;
+      letter-spacing: 0.1875rem;
+      color: #272727;
+    }
+
+    ul {
+      padding: 0.75rem;
+
+      li {
+        display: flex;
+        align-items: center;
+        min-height: 3.6rem;
+        width: 100%;
+        border: 0.0625rem solid #e8e8e8;
+        margin: 0.625rem 0;
+        border-radius: 0.3125rem;
+        padding: 0.1875rem 0.5rem;
+        box-sizing: border-box;
+        transition: 0.4s ease;
+
+        p {
+          font-family: "BPG Arial", sans-serif;
+        }
+
+        .delete {
+          background-color: #fff;
+          border: 0.0625rem solid #a8a8a8;
+          border-radius: 0.375rem;
+          height: 1.5rem;
+          width: 1.5rem;
+          flex-shrink: 0;
+          margin-left: auto;
+          box-shadow: 0 0.625rem 0.875rem rgba(0, 0, 0, 0.07);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+
+          img {
+            width: 90%;
+          }
+        }
+
+        &:hover {
+          background: rgb(243, 243, 243);
+          transform: scale(1.03);
+          border: 0.0625rem solid #a8a8a8;
+        }
+      }
+    }
+  }
+}
